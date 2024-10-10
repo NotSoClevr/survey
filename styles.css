@@ -27,6 +27,7 @@ body {
     border: none;
     padding: 2rem 0;
     border-bottom: 3px solid #3b3b4f;
+    display: block;
   }
   
   fieldset:last-of-type {
@@ -34,7 +35,7 @@ body {
   }
   
   label {
-    display: block;
+    display: inline-block;
     margin: 0.5rem 0;
   }
   
@@ -58,6 +59,7 @@ body {
     vertical-align: middle;
     display: inline-block;
     flex: none;
+    
   }
   
   input[type="submit"] {
@@ -81,5 +83,17 @@ body {
 
   .footer {text-align: center;}
 
+.input-label {display: block;
+}
 
+input[type="checkbox"] {margin: 5px;
+}
 
+input[type="radio"] {margin: 5px;
+}
+
+textarea {height: 70px;
+}
+
+::placeholder {text-align: center;
+}
