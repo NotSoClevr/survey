@@ -10,18 +10,18 @@
       <p id="description">Fill out the form below to let me know how I'm doing</p>
       <form id="survey-form">
         <fieldset>
-        <label for="name" id="name-label">Name:
+        <label for="name" id="name-label" class="input-label">Name:
           <input id="name" type="text" required placeholder="First and Last name"></input>
         </label>
-        <label for="email" id="email-label">Email:
+        <label for="email" id="email-label" class="input-label">Email:
           <input id="email" type="email" required placeholder="Email"></input>
         </label>
-        <label for="number" id="number-label">Rating:
+        <label for="number" id="number-label" class="input-label">Rating:
           <input id="number" type="number" pattern="[0-9]" required min="1" max="10" placeholder="1-10"></input>
         </label>
-        <label for="dropdown">How did you find me?
+        <label for="dropdown" class="input-label">How did you find me?
           <select id="dropdown">
-            <option value="""">Select One</option>
+            <option value="''">Select One</option>
             <option value="1">Job Application</option>
             <option value="2">GitHub</option>
             <option value="3">Friend</option>
@@ -30,27 +30,27 @@
         </label>
         </fieldset>
         <fieldset>
-        <label  for="hired"><h3>Would you hire me?</h3>
-          <input class="inline" type="radio" name="hired" id="hired" checked value="1">Absolutely</input>
-          <input class="inline" type="radio" name="hired" id="hired" value="2">Maybe Later</input>
-        </label>
-        <label for="checkbox"><h3>Which project is your favorite? (select all that apply)</h3>
-          <div><input id="checkbox" type="checkbox" value="1" class="inline">Portfolio Website</input></div>
-          <div><input id="checkbox" type="checkbox" value="2" class="inline">Search Engine</input></div>
-          <div><input id="checkbox" type="checkbox" value="3" class="inline">FB Messenger Clone</input></div>
-          <div><input id="checkbox" type="checkbox" value="4" class="inline">Weather App</input></div>
-          <div><input id="checkbox" type="checkbox" value="5" class="inline">Virtual Tamogachi</input></div>
-          <div><input id="checkbox" type="checkbox" value="6" class="inline">Galaga Clone</input></div>
-          <div><input id="checkbox" type="checkbox" value="7" class="inline">Snake Game</input></div>
-        </label>
+        <div><h3>Would you hire me?</h3>
+          <label for="hired">Absolutely</label><input class="inline" type="radio" name="hired" id="hired" checked value="1"></input>
+          <label for="hired">Maybe Later</label><input class="inline" type="radio" name="hired" id="hired" value="2"></input>
+        </div>
+        <div><h3>Which project is your favorite? (select all that apply)</h3>
+          <div><label for="checkbox1">Portfolio Website</label><input id="checkbox1" type="checkbox" value="1" class="inline"></input></div>
+          <div><label for="checkbox2">Search Engine</label><input id="checkbox2" type="checkbox" value="2" class="inline"></input></div>
+          <div><label for="checkbox3">FB Messenger Clone</label><input id="checkbox3" type="checkbox" value="3" class="inline"></input></div>
+          <div><label for="checkbox4">Weather App</label><input id="checkbox4" type="checkbox" value="4" class="inline"></input></div>
+          <div><label for="checkbox5">Virtual Tamogachi</label><input id="checkbox5" type="checkbox" value="5" class="inline"></input></div>
+          <div><label for="checkbox6">Galaga Clone</label><input id="checkbox6" type="checkbox" value="6" class="inline"></input></div>
+          <div><label for="checkbox7">Snake Game</label><input id="checkbox7" type="checkbox" value="7" class="inline"></input></div>
+        </div>
         </fieldset>
         <fieldset>
-        <label for="comments">
+        
           <textarea id="comments" placeholder="Additional Comments"></textarea>
-        </label>
-        <label for="submit">Submit
+        
+        
           <input type="submit" id="submit"></input>
-        </label>
+        
         </fieldset>
       </form>
   </body>
